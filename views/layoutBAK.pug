@@ -1,0 +1,58 @@
+doctype html
+html
+  head
+    link(rel='stylesheet', href= '/stylesheets/index.css')
+    title The Richard R. Fay Foundation
+    script(
+    function getOption() {
+    var field = document.getElementById("fname");
+    var value = document.getElementById("val").value;
+    var alias = {
+      'Author': 'authors.author_name',
+      'Species': 'species.species_name',
+      'Topic': 'topics.topic'
+    }    
+    var temp = field.options[field.selectedIndex].text
+    
+    document.getElementById("output").innerHTML = 
+    "{" + alias[temp] + ":" + value + "}";
+    }
+    )
+    
+  body
+    .header
+      .container
+        img#icon(src='/images/header.png' width='500px' height='110px' position='inline')
+
+    ul.nav
+      li: a(href='/') Home
+      li: a(href='/Introduction') Introduction to <em>Hearing in Vertebrates</em> 
+ 
+    .main-content
+      block content
+      script(src='https://code.jquery.com/jquery-3.1.0.js')
+      // script(src='http://d3js.org/d3.v4.js')
+      script(src='/javascripts/global.js')
+
+    .footer 
+      |The Richard R. Fay Foundation is dedicated to the use and accessibility of high-quality biomedical research data. 
+      | 
+      |
+      
+      
+
+<form>
+Field  :
+<select id="fname">
+  <option>Author</option>
+  <option>Species</option>
+  <option>Topic</option>
+</select>
+<br>
+Value: <input type="text" id="val" value="<text>"><br>
+<br><br>
+<input type="button" onclick="getOption()" value="Submit">
+</form>
+
+<p id="output"></p>
+

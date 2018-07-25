@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css?family=Petrona");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Petrona';
+}
+.header {
+  background:#fff;
+  padding: 3%
+}
+
+.header .container {
+  background:#fff;
+  text-align:center;
+}
+
+.header .container .img {
+  padding: 3%;
+}
+
+.header .container .page-title {
+  width: 90%;
+  height:100%;
+  float: Right;
+  font-weight: 400;
+  font-size: 40px;
+  padding: 0px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.header .container .tagline {
+  width: 90%;
+  height: 100%;
+  float: Right;
+  font-weight: 400;
+  font-size: 16px;
+  padding; 10px;
+  color: #fff;
+}
+.nav {
+  background: #008099;
+  text-align: center;
+}
+.nav li {
+  display: inline-block;
+}
+.nav a {
+  display: inline-block;
+  padding: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+.nav a:hover {
+  background-color: #fff;
+  color: #008099;
+  text-decoration: bold;
+}
+.main-content {
+  margin: 50px auto;
+  max-width: 600px;
+  color: #003;
+}
+.main-content p {
+  line-height: 1.6;
+  margin-bottom: 1.7em;
+  color: #003;
+}
+
+.main-content a.showuser1 {
+  position:relative;
+  top:0; left:0;
+  color: #009;
+  float: left;
+  font-weight: 800;
+  font-size: 16px;
+  padding: 8px 8px;
+  text-decoration: none;
+}
+
+.main-content a.showuser2 {
+  position:relative;
+  top:0; left:0;
+  color: #003;
+  float: left;
+  font-weight: 800;
+  font-size: 12px;
+  margin: 12 4px;
+  padding: 8px 8px;
+  text-decoration: none;
+}
+
+.main-content a.buttonBar {
+  position:relative;
+  top:0; left:0;
+  color: #003;
+  float: center;
+  font-weight: 800;
+  font-size: 12px;
+  margin: 12 4px;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.main-content button {
+  position:relative;
+  top:0; left:0;
+  color: #003;
+  float: center;
+  font-weight: 800;
+  font-size: 12px;
+  margin: 12 4px;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.main-content #dataList {
+  position:relative;
+  top:0; left:0;
+  color: #003;
+  float: left;
+  font-weight: 800;
+  font-size: 20px;
+  margin: 12 4px;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.footer {
+  margin: 50px auto;
+  max-width: 600px;
+  border-top: 1px solid #444;
+  padding: 20px 0;
+}
+
+.footer h2 {
+  font-weight: 400;
+  font-size: 16px;
+  padding; 40px;
+  color: #004;
+}
+
+.footer p {
+  color: #004;
+  padding: 40px 0;
+  font-size: 14px;
+}
+
+#wrapper {
+        padding-left:0px;
+        position:relative;
+}
+
+#dataList {
+        margin:0 0 30px 0;
+}
+        #dataList table {
+                border-collapse:separate;
+                border-spacing:1px;
+                background:#fff;
+        }
+                #dataList table th {
+                        background:#EEE;
+                        font-weight: 400;
+                        font-size: 16px;
+                        padding:10px 20px;
+                        text-align:left;
+                }
+                #dataList table tbody {
+                        padding:0; margin:0;
+                        border-collapse:collapse;
+                        font-weight: 400;
+                        font-size: 14px;
+                        border-spacing:0px;
+                }
+                        #dataList table td {
+                                background:#FFF;
+                                padding:5px 10px;
+                                text-align:left;
+                                font-weight: 400;
+                                font-size: 14px;
+                        }
+
+#metadata {
+        position:relative;
+        top:0; left:0;
+        text-align:left;
+        padding:15px;
+        border:0px solid #CCC;
+        background:#FFF;
+        font-weight: 400;
+        font-size: 16px;
+}
+        #metadata strong {
+                text-align:left;
+                padding:15px;
+                border:0px solid #CCC;
+                background:#FFF;
+                font-weight: 400;
+                font-size: 16px;
+        }                
+        #metadata p {
+                text-align:left;
+                padding:15px;
+                border:0px solid #CCC;
+                background:#FFF;
+                font-weight: 400;
+                font-size: 16px;
+        }
+

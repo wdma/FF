@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function getOption() {
+    var field = document.getElementById("fname");
+    var value = document.getElementById("val").value;
+    var alias = {
+      'Author': 'authors.author_name',
+      'Species': 'species.species_name',
+      'Topic': 'topics.topic'
+    }    
+    var temp = field.options[field.selectedIndex].text
+    
+    document.getElementById("output").innerHTML = 
+    "{" + alias[temp] + ":" + value + "}";
+}
+</script>
+</head>
+<body>
+
+<form>
+Field  :
+<select id="fname">
+  <option>Author</option>
+  <option>Species</option>
+  <option>Topic</option>
+</select>
+<br>
+Value: <input type="text" id="val" value="<text>"><br>
+<br><br>
+<input type="button" onclick="getOption()" value="Submit">
+</form>
+
+<p id="output"></p>
+
+</body>
+</html>
+

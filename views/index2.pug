@@ -1,0 +1,72 @@
+extends layout
+
+block content
+  p
+   |This project honors the life and works of <a href='/Introduction/#RRFay'>Professor Richard R. Fay</a>, whose kindness and intellectual 
+   |generosity have touched so many.  Here, you can find the data found in <b>Hearing in Vertebrates</b>, just one of his 
+   |contributions.  The <a href='/Introduction'>introduction to the book</a> includes a comprehensive tutorial for those interested in 
+   |the auditory sciences.  Select the dataset you wish to see and then scroll to the bottom of the page to view the data.  
+  p
+   |This website is still under development: More user friendly data and search capabilities are coming soon!  Kindly email 
+   |<a href="mailto:dma@fayfoundation.org">us</a> if you have questions/comments, find missing data or transcription errors.  We also 
+   |want to know if you find this website useful and/or how to make it more useful!  
+  p
+   |If you use this resource, please cite both the original literature as well as the Richard R. Fay Foundation. 
+  #dataList
+    table
+      tbody
+  #buttonBar
+  a(href='#buttonBar' class="buttonBar") The button bar should appear here 
+
+  // <div style="text-align:center"></div>
+  // Wrapper
+  #wrapper
+  // PLOT
+  h2 
+  #thePlot
+  <g></g>
+  // /PLOT
+  h2
+  // METADATA
+  h2  
+  #metadata
+  p
+  | <b>Title:</b>
+  |  <span id='record_title'></span>
+  br
+  strong Dataset:
+  |  <span id='data_title'></span>
+  br
+  strong Topic(s):
+  |  <span id='topic'></span>
+      br
+      strong Species:
+        |  <span id='species'></span>
+      br
+      strong A.K.A.:
+        |  <span id='common_name'></span>
+      br
+      strong Author(s):
+        |  <span id='author'></span>
+      br
+      strong Notes:
+        |  <span id='notes'></span>
+      br
+      strong Figure:
+        |  <span id='record_number'></span>
+      br
+      strong Reference:
+        |  <span id='reference'></span>
+      br
+      strong The data:
+      br  
+      strong Axis Labels:
+        |  <span id='axis_labels'></span>
+      br
+      strong Units:
+        |  <span id='units'></span>
+      br
+      strong Data:
+        |  <span id='vals'></span>
+      // /METADATA
+  // /WRAPPER  
